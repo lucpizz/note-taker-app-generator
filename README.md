@@ -6,7 +6,7 @@
 
 # Note-Taker
 
-[Link to Deployed App on Heroku](https://note-taker-app-generator.herokuapp.com/) 
+[Link to Deployed App on Heroku - https://note-taker-app-generator.herokuapp.com/](https://note-taker-app-generator.herokuapp.com/)
 
 ---
 
