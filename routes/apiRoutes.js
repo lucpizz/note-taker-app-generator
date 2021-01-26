@@ -8,6 +8,8 @@ const { v4: uuidv4 } = require("uuid");
 // ROUTING
 // ===============================================================================
 
+// api to read notes
+
 module.exports = function (app) {
   app.get("/api/notes", function (req, res) {
     fs.readFile(db, "utf-8", (err, data) => {
@@ -15,6 +17,8 @@ module.exports = function (app) {
       res.json(JSON.parse(data));
     });
   });
+
+  //api to read and post notes
 
   app.post("/api/notes", (req, res) => {
     let new_note = req.body;
@@ -27,6 +31,8 @@ module.exports = function (app) {
       });
     });
   });
+
+  //api to read and delete notes
 
   app.delete("/api/notes/:id", function (req, res) {
     let note_id = req.params.id;
